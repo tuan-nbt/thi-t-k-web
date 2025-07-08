@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - PC</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-form-wrapper">
+            <div class="already-member">
+                Already a member? <a href="#">Login</a>
+            </div>
+            <h1>Input your information</h1>
+            <p class="description">
+                We need you to help us with some basic information for your account creation. Here
+                are our <a href="#">terms and conditions</a>. Please read them carefully. We are GDPR compliant
+            </p>
+
+            <form action="action_page.php" method="POST">
+                <div class="form-row">
+                    <div class="container__input-wrapper">
+                        <label for="firstName">First name<span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Ex: John" />
+                        <span class="container__help-text">Invalid name format</span>
+                    </div>
+
+                    <div class="container__input-wrapper">
+                        <label for="lastName">Last name<span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Ex: Smith" />
+                        <span class="container__help-text">Invalid name format</span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="container__input-wrapper">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="text" id="email" name="email" placeholder="Ex: johnsmith.2023@gmail.com" />
+                        <span class="container__help-text">Invalid email format</span>
+                    </div>
+
+                    <div class="container__input-wrapper">
+                        <label for="phoneNumber">Phone number<span class="required">*</span></label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Ex: 0123456789" />
+                        <span class="container__help-text">Invalid phone number format</span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="container__input-wrapper">
+                        <label for="school">School</label>
+                        <input type="text" id="school" name="school" placeholder="Ex: Tong A University" />
+                        <span class="container__help-text">Invalid school name</span>
+                    </div>
+
+                    <div class="container__input-wrapper">
+                        <label for="studentCode">Student code</label>
+                        <input type="text" id="studentCode" name="studentCode" placeholder="Ex: 2898124" />
+                        <span class="container__help-text">Invalid student code</span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="container__input-wrapper">
+                        <label for="password">Password<span class="required">*</span></label>
+                        <input type="password" id="password" name="password" placeholder="Ex: Ha23@kwek12" />
+                        <span class="container__help-text">Your password must be at least 8 characters long</span>
+                    </div>
+
+                    <div class="container__input-wrapper">
+                        <label for="confirmPassword">Confirm password<span class="required">*</span></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Ex: Ha23@kwek12" />
+                        <span class="container__help-text">Your password and confirmation password do not match</span>
+                    </div>
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="terms" name="terms" />
+                    <label for="terms">I agree with <a href="#">terms and conditions.</a></label>
+                </div>
+
+                <button type="submit" class="register-button">Register</button>
+            </form>
+        </div>
+        <div class="illustration-wrapper">
+            <img src="hinh.jpg" alt="Delivery person walking" />
+        </div>
+    </div>
+</body>
+</html>
